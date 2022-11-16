@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim Lin</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/769d2a0535.js" crossorigin="anonymous"></script>
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <div class="app">
+        <!-- 上面導覽列 -->
+        <nav>
+            <!-- logo 跟名子 -->
+            <div class="nav_bar ">
+                <div class="nav_left">
+                        <div class="nav_front">
+                            
+                           <img src="./pic/LOGO_adobe_express.svg" alt="" class="svg nav_logo">
+                            <a href="#" class="logo_name">Tim Lin</a>
+                    </div>
+                </div>           
+                <!-- 關於 履歷 作品切換按鈕 -->
+                <div class="nav_right">
+                    <ul class="nav_end">
+                        <li>
+                            <a href="#" class="nav_btn" >About Me</a>
+                        </li>
+                        <li>
+                            <div id="portfolioBtn" class="nav_btn">Portfolio</div>
+                        </li>
+                        <li>
+                            <div class="nav_btn" id="resumeBtn">Resume</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- 自傳&自我介紹頁面 -->
+        <div class="edit">
+            <div class="section1">
+                <!-- 左邊照片 背景圖案  名子 --> 
+                    <div class="personal_file ">
+                        <div class="myfile">
+                            <img src="./pic/履歷大頭貼.png" alt="" class="myphoto">
+                            <div class="myname">林炫佑</div>
+                            <div class="mynickname">Tim</div>
+                        </div>
+                        <!-- 卡片下面聯絡方式 -->
+                        <div class="connectbox textshadow">         
+                            <div class="card_intro pointer "><i class="fa-solid fa-square-envelope pointer"></i>zzz076@yahoo.com.tw</div>
+                            <div class="card_intro pointer "><i class="fa-solid fa-phone pointer"></i>0926-321-283</div>
+                            <div class="card_intro pointer"><i class="fa-brands fa-github pointer"></i><a  href="https://github.com/zzz076/Portfolio.git" target="_blank" class="card_link pointer">Tim's repository</a></div>
+                            <div class="card_intro pointer"><i class="fa-brands fa-linkedin-in pointer"></i><a href="https://www.linkedin.com/in/%E7%82%AB%E4%BD%91-%E6%9E%97-b9b112242/" target="_blank" class="pointer card_link">林炫佑</a>
+                            </div>
+                        </div>
+                    </div>  
+            </div>
+            <!-- 間隔    -->
+            <!-- <div class="space"></div> -->
+            <!-- 右邊自傳 -->
+            <div class="resume">
+                <div class="resume_sec1 textshadow">
+                    嗨，歡迎來到我的履歷靜態網站，以下是我的一些簡介，希望能讓你感到興趣，進而有更深入了解彼此的機會。</br></br>
+                <!-- 家DIV -->
+                <div class="resume_context">
+                    1.前端技術：使用過HTML、CSS、Sass、Bootstrap、JS、React的技術開發網站，熟悉RWD切版。</br>
+                    2.具備簡單React前端框架程式能力，以React串接過API、寫過Todolist</br>
+                    3.使用過webpack等打包工具，知道webpack及其套件的運用（Babel/Eslint等等）</br>
+                    4.擁有api串接經驗：有網站架構的實戰經驗</br>
+                    5.了解Github版本控制操作：了解Github push/pull/PR/branch等相關技術</br>
+                    6.具備英文能力，能夠查閱原文文件、自行搜尋網路資源
+                </div>
+                    
+           
+                   </div>
+               
+                   
+            </div>
+        </div>
+        <!-- 作品集頁 -->
+  
+        <div class="sec_header bg-pan-left color-change-2x" id="portfolio">
+            <img src="" alt="" class="logo">
+            <div class="sec3_title" >Portfolio</div>
+        </div>
+        <div class="section3">
+            <div class="skill">Skill
+                <div class="skill_btns">
+                    <div class="skill_btn"> <img src="./pic/icon-html.9f96d807.svg" alt="" class="skill_img">
+                    </div>
+                    <div class="skill_btn"> <img src="./pic/icon-js.5a4b5df3.svg" alt="" class="skill_img">
+                    </div>
+                    <div class="skill_btn"> <img src="./pic/icon-sass.25d33b7a.svg" alt="" class="skill_img">
+                    </div>
+                    <div class="skill_btn"> <img src="./pic/React-icon.svg" alt="" class="skill_img">
+                    </div>
+                    <div class="skill_btn"> <img src="./pic/Google__G__Logo.svg" alt="" class="skill_img">
+                    </div>
+                    <div class="skill_btn"> <img src="./pic/icon-git.35428fcc.svg" alt="" class="skill_img"></div>
+                
+                </div>
+            </div>
+            <div class="portfolios">
+                <div class="portfolio">
+                    <div class="portfolio_image">
+                        <img src="./pic/weather api.png" alt="" class="portfolio_card">
+                        <div class="portfolio_actionbar"> 
+                            <div class="portfolio_action tag">React</div>
+                            <div class="portfolio_tag tag">#web</div>
+                        </div>
+                    </div>
+                    <div class="portfolio_describes">
+                        <div class="portfolio_title">Weather APP</div>
+                        <div class="portfolio_describe content">Use React to fetch the open weather api.<br/>
+                        Enter city name to know the temperature,humidity,and wind speed.
+                        </div>
+                        <div class="portfolio_git  content"> <a class="pointer"  href="https://www.youtube.com/" target="_blank">
+                            git-link</a></div>
+                    </div>
+                 </div>
+                 <div class="portfolio">
+                    <div class="portfolio_image">
+                        <img src="./pic/TodoList.png" alt="" class="portfolio_card">
+                        <div class="portfolio_actionbar"> 
+                            <div class="portfolio_action tag">React</div>
+                            <div class="portfolio_tag tag">#web</div>
+                        </div>
+                    </div>
+                    <div class="portfolio_describes">
+                        <div class="portfolio_title">TodoList</div>
+                        <div class="portfolio_describe content">Use React to bulid a todolist.<br/>
+                        The app can fliter completed or not and save it into localstorage.</div>
+                        <div class="portfolio_git content"><a  class="pointer" href="https://www.youtube.com/" > git-link</a></div>
+                    </div>
+                 </div>
+                
+            </div>
+        </div>
+          <!-- 過往經歷頁 -->
+        <div class="section2">
+            <!-- 經歷頁上面的LOGO跟簡述 -->
+            <div class="sec_header">Resume
+                <img src="" alt="" class="logo">
+                <div class="sec2_title"></div>
+            </div>
+            <!-- 經歷的年份、職稱、工作內容 -->
+            <div class="sec2_articles">
+                <div class="sec2_article">
+                    <div class="sec2_article_left">
+                        <div class="sec2_article_title">群立科技</br>專案助理</div>
+                        <div class="sec2_article_time">2022.4~2022.7</div>
+                    </div>
+                    <div class="sec2_article_content">
+                        
+                        <div class="sec2_article_text">
+                            1.撰寫企畫書、簡報協助投標</br>
+                            2.專案時程推動</br>
+                            3.系統維護、檢測</br>
+                            4.各家廠商協調</br>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec2_article">
+                    <div class="sec2_article_left">
+                        <div class="sec2_article_title">路加科技</br>營運經理</div>
+                        <div class="sec2_article_time">2021.5~2021.12</div>
+                    </div>
+                    <div class="sec2_article_content">
+                        
+                        <div class="sec2_article_text">
+                            1.使產品使用率半年成長七倍</br>
+                            2.公司資產及人員調配</br>
+                            3.現場執行、施工、驗收</br>
+                            4.選商、品保、訂單及合約簽屬</br>
+                            5.廠商及不同窗口間協調
+                        </div>
+                    </div>
+                </div>
+                <div class="sec2_article">
+                    <div class="sec2_article_left">
+                        <div class="sec2_article_title">台灣知識庫</br>企劃行銷</div>
+                        <div class="sec2_article_time">2021.1~2021.4</div>
+                    </div>
+                    <div class="sec2_article_content">
+                        
+                        <div class="sec2_article_text">
+                            1.制定行銷文案</br>
+                            2.協助進行活動</br>
+                            3.現場業務溝通窗口</br>
+                            4.針對回報問題進行整理並改善</br>
+                                                   </div>
+                    </div>
+                </div>
+                <div class="sec2_article">
+                    <div class="sec2_article_left">
+                        <div class="sec2_article_title">世行有限</br>採購專員</div>
+                        <div class="sec2_article_time">2020.10~2021.12</div>
+                    </div>
+                    <div class="sec2_article_content">
+                        
+                        <div class="sec2_article_text">
+                            1.下訂單、追進度交期</br>
+                            2.協助業務選料及追蹤進度</br>
+                            3.協助議價爭取優惠價格</br>
+                            4.上下游廠商協調以利專案進行</br>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec2_article">
+                    <div class="sec2_article_left">
+                        <div class="sec2_article_title">台灣大哥大</br>業務/店長</div>
+                        <div class="sec2_article_time">2018.6~2020.4</div>
+                    </div>
+                    <div class="sec2_article_content">
+                        
+                        <div class="sec2_article_text">
+                            1.全北區最快轉正職、成為店長</br>
+                            2.全店零疏失，業績成長15%</br>
+                            3.全台業務第七名業績達130%</br>
+                            4.帶新人熟悉業務</br>
+                          
+
+                        </div>
+                    </div>
+                </div>
+         
+            </div>
+        </div>
+        <!-- footer copyright -->
+        <div class="new_window"></div>
+        <footer>
+            <div class="copyright">Tim's portfolio <i class="fa-solid fa-copyright"></i> 2022 Copyright  </div>
+        </footer>
+    </div>
+</body>
+</html>

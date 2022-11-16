@@ -1,0 +1,484 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+@media (max-width: 1080px) {
+  .app .portfolios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .app .portfolios .portfolio {
+    display: flex;
+    flex-direction: column;
+  }
+  .app .portfolios .portfolio .portfolio_image, .app .portfolios .portfolio .portfolio_describes {
+    width: 100%;
+  }
+  .app .skill_btn {
+    padding: 0.2rem !important;
+  }
+  .app .edit .resume .resume_sec1 {
+    width: 100%;
+    padding: 1rem 5rem 1rem 0;
+  }
+  .app .edit .resume, .app .edit .section1 {
+    width: 50%;
+  }
+}
+@media (max-width: 790px) {
+  .app .skill_img {
+    width: 4rem !important;
+    height: 4rem !important;
+    border-radius: 1rem !important;
+  }
+  .app .nav_btn {
+    display: none;
+  }
+  .app * {
+    font-size: 0.8rem;
+  }
+  .app .skill_btns {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap !important;
+  }
+  .app .section3, .app .section2 {
+    width: 90%;
+  }
+  .app .section2 {
+    margin: 0 auto;
+  }
+  .app .edit {
+    flex-direction: column;
+  }
+  .app .edit .resume {
+    justify-content: center;
+    width: 100%;
+  }
+  .app .edit .resume .resume_sec1 {
+    padding: 1rem 3rem;
+  }
+  .app .edit .section1 {
+    width: 100%;
+  }
+  .app .edit .section1 .personal_file {
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .app .edit .section1 .personal_file .myfile {
+    width: 50%;
+  }
+  .app .edit .section1 .personal_file .myfile .mynickname::after {
+    display: none;
+  }
+  .app .edit .section1 .personal_file .connectbox {
+    font-size: 1rem;
+  }
+  .app .edit .section1 .personal_file .connectbox .card_intro .card_link {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 390px) {
+  * {
+    font-size: 0.8rem;
+  }
+}
+:root {
+  --color-primary: #F7F2E9;
+  --color-secodary:#2F2F30;
+  --color-green:#7CAE9A;
+  --color-pink:#886C78;
+  --color-gold:#FFF4D2;
+  --color-grey-opc:rgba(61, 61, 61, 0.8);
+  font-family: "Inter", sans-serif;
+  font-family: "Noto Sans TC", sans-serif !important;
+}
+
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: var(--color-green);
+  }
+  100% {
+    background: var(--color-primary);
+  }
+}
+
+@keyframes color-change-2x {
+  0% {
+    background: var(--color-green);
+  }
+  100% {
+    background: var(--color-primary);
+  }
+}
+@-webkit-keyframes bg-pan-left {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes bg-pan-left {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.bg-pan-left {
+  -webkit-animation: bg-pan-left 8s both;
+  animation: bg-pan-left 8s both;
+}
+
+.color-change-2x {
+  -webkit-animation: color-change-2x 4s linear infinite alternate both;
+  animation: color-change-2x 4s linear infinite alternate both;
+}
+
+img, a {
+  max-width: 100%;
+  height: auto;
+  text-decoration: none;
+}
+
+* {
+  cursor: default;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  letter-spacing: 0.025em;
+  vertical-align: 0;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.app {
+  background: var(--color-primary);
+  color: var(--color-secodary);
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+nav {
+  width: 100%;
+  background: var(--color-primary);
+  display: flex;
+  align-items: flex-start;
+  padding: 2rem 2.25rem 0 2.25rem;
+  position: fixed;
+  z-index: 50;
+}
+
+.nav_bar {
+  background: var(--color-gold);
+  width: 100%;
+  color: var(--color-secodary);
+  display: flex;
+  position: relative;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 5px 5px 10px #826d6d;
+}
+.nav_bar .nav_front {
+  display: flex;
+  align-items: center;
+}
+.nav_bar .nav_front .nav_logo {
+  width: 4rem;
+  border-radius: 2rem;
+}
+.nav_bar .nav_front .logo_name {
+  color: var(--color-secodary);
+  padding-left: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.nav_bar .nav_right {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+.nav_bar .nav_right .nav_end {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+.nav_bar .nav_right .nav_end .nav_btn {
+  color: var(--color-secodary);
+  padding: 0.25rem 0.5rem;
+  border-radius: 2rem;
+  margin-left: 1rem;
+  font-weight: bold;
+  transition: all ease-in-out 0.3s;
+}
+.nav_bar .nav_right .nav_end .nav_btn:hover {
+  color: var(--color-primary);
+  background-color: var(--color-secodary);
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.7);
+  transition: all ease-in-out 0.3s;
+}
+
+.edit {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 128px;
+}
+.edit .section1 {
+  width: 40%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.edit .section1 .personal_file {
+  display: flex;
+  width: 100%;
+  max-width: 24rem;
+  top: 6%;
+  margin: 0 auto;
+  padding: 1rem 3rem;
+  flex-direction: column;
+}
+.edit .section1 .personal_file .myfile {
+  text-align: center;
+}
+.edit .section1 .personal_file .myfile .myphoto {
+  border-radius: 50%;
+  scale: 0.8;
+}
+.edit .section1 .personal_file .myfile .myname, .edit .section1 .personal_file .myfile .mynickname {
+  font-size: 1.75rem;
+}
+.edit .section1 .personal_file .myfile .mynickname::after {
+  content: "";
+  display: block;
+  width: 70%;
+  margin: 1rem auto;
+  border-bottom: 2px solid var(--color-green);
+}
+.edit .section1 .personal_file .card_intro {
+  color: var(--color-secodary);
+  display: flex;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.edit .section1 .personal_file .card_intro .card_link {
+  color: var(--color-secodary);
+}
+.edit .section1 .personal_file .card_intro i {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+}
+.edit .section1 .personal_file .card_intro:hover {
+  color: var(--color-green);
+  transition: all ease-in-out 0.2s;
+}
+.edit .section1 .personal_file .card_intro:hover .card_link {
+  color: var(--color-green);
+  transition: all ease-in-out 0.2s;
+}
+
+.resume {
+  width: 60%;
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: bold;
+}
+.resume .resume_sec1 {
+  padding: 1rem 3rem;
+  font-size: 1.25rem;
+  width: 70%;
+  overflow: hidden;
+  line-height: 1.5;
+  text-indent: 2em;
+}
+.resume .resume_sec1 .resume_context {
+  font-size: 1rem;
+  text-indent: 0;
+}
+
+.section2 {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.sec_header {
+  font-size: 3rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+.sec_header .sec3_title {
+  font-size: 3rem;
+}
+
+.sec2_articles {
+  max-width: 38rem;
+  width: 100%;
+  display: flex;
+  margin: auto;
+  margin-top: 2rem;
+  flex-direction: column;
+  color: var(--color-green);
+}
+.sec2_articles .sec2_article_left {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 100%;
+}
+.sec2_articles .sec2_article_left .sec2_article_title {
+  font-size: 1.5rem;
+}
+.sec2_articles .sec2_article {
+  height: 14rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 2rem;
+  background-color: var(--color-secodary);
+  border-radius: 1rem;
+}
+
+.section3 {
+  display: block;
+  width: 70%;
+  height: 100%;
+  max-width: 1280px;
+  margin: auto;
+}
+.section3 .skill {
+  font-weight: bold;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  font-size: 1.75rem;
+  align-items: center;
+  justify-content: center;
+}
+.section3 .skill .skill_btns {
+  display: flex;
+}
+.section3 .skill .skill_btns .skill_img {
+  background-color: #fff;
+  width: 5rem;
+  height: 5rem;
+  padding: 0.2rem 0.5rem;
+  border: 3px solid #4a4a4a;
+  border-radius: 1.5rem;
+  opacity: 0.8;
+  scale: 0.9;
+  transition: all ease-in-out 0.2s;
+}
+.section3 .skill .skill_btns .skill_btn {
+  padding: 1rem;
+}
+.section3 .skill .skill_btns .skill_img:hover {
+  transition: all ease-in-out 0.2s;
+  opacity: 1;
+  scale: 1;
+}
+
+.portfolio {
+  margin-top: 4rem;
+  display: flex;
+  box-shadow: 0.5rem 0.5rem 1px 1px #b9bf68;
+}
+.portfolio .portfolio_image {
+  width: 50%;
+  height: 100%;
+  background-color: var(--color-grey-opc);
+  vertical-align: middle;
+  padding: 1rem;
+}
+.portfolio .portfolio_image .tag {
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+  font-size: 0.9rem;
+  color: rgb(255, 255, 255);
+  background-color: var(--color-green);
+}
+.portfolio .portfolio_image .portfolio_card {
+  width: 100%;
+  height: 100%;
+}
+.portfolio .portfolio_image .portfolio_actionbar {
+  height: 3rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.portfolio .portfolio_describes {
+  width: 50%;
+  max-height: 100%;
+  background-color: var(--color-green);
+  display: flex;
+  align-items: unset;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem 1rem 1rem 3rem;
+}
+.portfolio .portfolio_describes .portfolio_title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.portfolio .portfolio_describes .content {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.portfolio .portfolio_describes .portfolio_git {
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  color: var(--color-secodary);
+}
+.portfolio .portfolio_describes .portfolio_git a {
+  background-color: var(--color-secodary);
+  margin-right: 2rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: rgb(123, 123, 123);
+}
+.portfolio .portfolio_describes .portfolio_git a:hover {
+  transition: all 0.3s ease-in-out;
+  color: var(--color-gold);
+}
+
+footer {
+  width: 100%;
+  padding: 1rem 5rem;
+  display: flex;
+  justify-content: center;
+  background: var(--color-secodary);
+  position: absolute;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}/*# sourceMappingURL=style.css.map */
