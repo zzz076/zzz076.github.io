@@ -3,10 +3,10 @@ const portfolioButton = document.getElementById('portfolioBtn');
 const app = document.querySelector('.app');
 
 resumeButton.addEventListener('click', function (event) {
-   window.scrollTo(0,2150);
+   window.scrollTo(0,2920);
   });
 
   portfolioButton.addEventListener('click', function (event) {
-    window.scrollTo(0,750);
+    window.scrollTo(0,700);
    });
   

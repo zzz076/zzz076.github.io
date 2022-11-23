@@ -11,7 +11,8 @@
     display: flex;
     flex-direction: column;
   }
-  .app .portfolios .portfolio .portfolio_image, .app .portfolios .portfolio .portfolio_describes {
+  .app .portfolios .portfolio .portfolio_image,
+.app .portfolios .portfolio .portfolio_describes {
     width: 100%;
   }
   .app .skill_btn {
@@ -21,7 +22,8 @@
     width: 100%;
     padding: 1rem 5rem 1rem 0;
   }
-  .app .edit .resume, .app .edit .section1 {
+  .app .edit .resume,
+.app .edit .section1 {
     width: 50%;
   }
 }
@@ -42,7 +44,8 @@
     align-items: center;
     flex-wrap: wrap !important;
   }
-  .app .section3, .app .section2 {
+  .app .section3,
+.app .section2 {
     width: 90%;
   }
   .app .section2 {
@@ -85,12 +88,12 @@
   }
 }
 :root {
-  --color-primary: #F7F2E9;
-  --color-secodary:#2F2F30;
-  --color-green:#7CAE9A;
-  --color-pink:#886C78;
-  --color-gold:#FFF4D2;
-  --color-grey-opc:rgba(61, 61, 61, 0.8);
+  --color-primary: #f7f2e9;
+  --color-secodary: #2f2f30;
+  --color-green: #7cae9a;
+  --color-pink: #886c78;
+  --color-gold: #fff4d2;
+  --color-grey-opc: rgba(61, 61, 61, 0.8);
   font-family: "Inter", sans-serif;
   font-family: "Noto Sans TC", sans-serif !important;
 }
@@ -138,7 +141,8 @@
   animation: color-change-2x 4s linear infinite alternate both;
 }
 
-img, a {
+img,
+a {
   max-width: 100%;
   height: auto;
   text-decoration: none;
@@ -259,7 +263,8 @@ nav {
   border-radius: 50%;
   scale: 0.8;
 }
-.edit .section1 .personal_file .myfile .myname, .edit .section1 .personal_file .myfile .mynickname {
+.edit .section1 .personal_file .myfile .myname,
+.edit .section1 .personal_file .myfile .mynickname {
   font-size: 1.75rem;
 }
 .edit .section1 .personal_file .myfile .mynickname::after {
@@ -456,7 +461,7 @@ nav {
 .portfolio .portfolio_describes .portfolio_git {
   max-width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   color: var(--color-secodary);
 }
 .portfolio .portfolio_describes .portfolio_git a {
